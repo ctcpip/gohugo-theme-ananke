@@ -1,8 +1,9 @@
 <footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
+  <div class="flex justify-between items-end">
   <a class="f4 fw4 hover-gray no-underline dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
     &copy; {{ now.Format "2006" }} {{ .Site.Title }}
   </a>
     <div>{{ partial "social-follow.html" . }}</div>
+    <img style="float:right;width:10%;" src="/images/logo.png" alt="The Flamenco Institute" />
   </div>
 </footer>
